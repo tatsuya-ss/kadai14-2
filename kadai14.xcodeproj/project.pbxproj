@@ -13,6 +13,10 @@
 		75653D7A25B42F2900E5F8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75653D7925B42F2900E5F8EB /* Assets.xcassets */; };
 		75653D7D25B42F2900E5F8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75653D7B25B42F2900E5F8EB /* LaunchScreen.storyboard */; };
 		75653D8C25B4327700E5F8EB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75653D8B25B4327700E5F8EB /* .swiftlint.yml */; };
+		75653D9025B4366800E5F8EB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75653D8F25B4366800E5F8EB /* TableViewController.swift */; };
+		75653D9325B4368D00E5F8EB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75653D9225B4368D00E5F8EB /* AddViewController.swift */; };
+		75653D9925B4379C00E5F8EB /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75653D9725B4379C00E5F8EB /* CheckTableViewCell.swift */; };
+		75653D9A25B4379C00E5F8EB /* CheckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75653D9825B4379C00E5F8EB /* CheckTableViewCell.xib */; };
 		E67E3C54D6B2680E80E06B54 /* Pods_kadai14.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C86BA4964F4A590D706E6B6 /* Pods_kadai14.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		75653D7C25B42F2900E5F8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75653D7E25B42F2900E5F8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75653D8B25B4327700E5F8EB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		75653D8F25B4366800E5F8EB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		75653D9225B4368D00E5F8EB /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		75653D9725B4379C00E5F8EB /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
+		75653D9825B4379C00E5F8EB /* CheckTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckTableViewCell.xib; sourceTree = "<group>"; };
 		8A9A87EF4ECE768F03ECB9AB /* Pods-kadai14.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kadai14.release.xcconfig"; path = "Target Support Files/Pods-kadai14/Pods-kadai14.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +82,10 @@
 			children = (
 				75653D7025B42F2800E5F8EB /* AppDelegate.swift */,
 				75653D7225B42F2800E5F8EB /* SceneDelegate.swift */,
+				75653D8F25B4366800E5F8EB /* TableViewController.swift */,
+				75653D9225B4368D00E5F8EB /* AddViewController.swift */,
+				75653D9725B4379C00E5F8EB /* CheckTableViewCell.swift */,
+				75653D9825B4379C00E5F8EB /* CheckTableViewCell.xib */,
 				75653D7625B42F2800E5F8EB /* Main.storyboard */,
 				75653D7925B42F2900E5F8EB /* Assets.xcassets */,
 				75653D7B25B42F2900E5F8EB /* LaunchScreen.storyboard */,
@@ -152,6 +164,7 @@
 			files = (
 				75653D8C25B4327700E5F8EB /* .swiftlint.yml in Resources */,
 				75653D7D25B42F2900E5F8EB /* LaunchScreen.storyboard in Resources */,
+				75653D9A25B4379C00E5F8EB /* CheckTableViewCell.xib in Resources */,
 				75653D7A25B42F2900E5F8EB /* Assets.xcassets in Resources */,
 				75653D7825B42F2800E5F8EB /* Main.storyboard in Resources */,
 			);
@@ -207,6 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75653D7125B42F2800E5F8EB /* AppDelegate.swift in Sources */,
+				75653D9925B4379C00E5F8EB /* CheckTableViewCell.swift in Sources */,
+				75653D9025B4366800E5F8EB /* TableViewController.swift in Sources */,
+				75653D9325B4368D00E5F8EB /* AddViewController.swift in Sources */,
 				75653D7325B42F2800E5F8EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

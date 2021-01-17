@@ -11,7 +11,7 @@
         <!--Table View Controller-->
         <scene sceneID="PSO-yZ-hY7">
             <objects>
-                <tableViewController id="ZLS-mi-URU" sceneMemberID="viewController">
+                <tableViewController id="ZLS-mi-URU" customClass="TableViewController" customModule="kadai14" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lWl-gg-s2B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="1198.5507246376812" y="116.51785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="zQA-wG-LOI">
             <objects>
-                <viewController id="GzM-CX-FP9" sceneMemberID="viewController">
+                <viewController id="GzM-CX-FP9" customClass="AddViewController" customModule="kadai14" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8lJ-YL-ozj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
