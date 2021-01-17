@@ -1,3 +1,5 @@
+disabled_rules:
+- force_cast
 
 line_length: 300  #初期設定の箇所で警告を出さないため。
 

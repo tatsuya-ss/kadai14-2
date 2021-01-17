@@ -9,29 +9,25 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    var fruits = ["りんご", "みかん", "ばなな", "パイナップル"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UINib(nibName: "CheckTableViewCell", bundle: nil), forCellReuseIdentifier: CheckTableViewCell.reuseIdentifier)
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return fruits.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CheckTableViewCell.reuseIdentifier, for: indexPath) as! CheckTableViewCell
 
-        // Configure the cell...
+        cell.configure(isChecked: indexPath.row % 2 == 1, name: fruits[indexPath.row])
 
         return cell
     }
-    
 }
