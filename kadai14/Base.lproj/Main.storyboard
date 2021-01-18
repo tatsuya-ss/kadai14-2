@@ -74,11 +74,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4NU-sC-ORj">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UGK-he-rfY"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wGx-Ue-brl"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UGK-he-rfY">
+                            <connections>
+                                <segue destination="DQy-u3-ca9" kind="unwind" unwindAction="cancelWithSegue:" id="RF4-q0-2zb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wGx-Ue-brl">
+                            <connections>
+                                <action selector="saveButton:" destination="GzM-CX-FP9" id="NP6-sp-6SP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addTextField" destination="EWn-FB-BFh" id="goM-gT-6Aa"/>
+                        <segue destination="DQy-u3-ca9" kind="unwind" identifier="exit" unwindAction="exitWithSegue:" id="15N-NF-Nwo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmd-hg-g6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="DQy-u3-ca9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3042.0289855072465" y="116.51785714285714"/>
         </scene>

@@ -8,9 +8,8 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    private var fruits = ["りんご", "みかん", "ばなな", "パイナップル"]
 
-    var fruits = ["りんご", "みかん", "ばなな", "パイナップル"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CheckTableViewCell", bundle: nil), forCellReuseIdentifier: CheckTableViewCell.reuseIdentifier)
@@ -29,5 +28,14 @@ class TableViewController: UITableViewController {
         cell.configure(isChecked: indexPath.row % 2 == 1, name: fruits[indexPath.row])
 
         return cell
+    }
+
+    @IBAction private func cancel(segue: UIStoryboardSegue) {
+    }
+
+    @IBAction private func exit(segue: UIStoryboardSegue) {
+        let addView = segue.source as? AddViewController
+        fruits.append(addView!.additionName)
+        tableView.reloadData()
     }
 }

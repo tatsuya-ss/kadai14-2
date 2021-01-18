@@ -8,15 +8,14 @@
 import UIKit
 
 class CheckTableViewCell: UITableViewCell {
+    @IBOutlet weak private var checkImage: UIImageView!
 
-    @IBOutlet weak var checkImage: UIImageView!
-    
-    @IBOutlet weak var memoLabel: UILabel!
-    
+    @IBOutlet weak private var memoLabel: UILabel!
+
     static let reuseIdentifier = "Cell1"
-    
-    static let image = UIImage(named: "check")
-    
+
+    static private let image = UIImage(named: "check")
+
     func configure(isChecked: Bool, name: String) {
         checkImage.image = isChecked ? CheckTableViewCell.image : nil
         memoLabel.text = name
